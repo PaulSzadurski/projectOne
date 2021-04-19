@@ -1,0 +1,50 @@
+header {
+  background-color: $pine;
+}
+
+.homeHeader {
+  height: 80vh;
+}
+
+nav {
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  padding-left: 45px;
+  padding-top: 25px;
+}
+
+// home header
+.homeFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.homeFlex h1 {
+  padding-right: 1.25rem;
+  position: relative;
+}
+
+.homeFlex h1::before {
+  background: url(../assets/circle-text.png) no-repeat;
+  content : '';
+  display: block;
+  position: absolute;
+  top: -4rem;
+  left: -3rem;
+  height: 500px;
+  width: 500px;
+}
+
+header img {
+  box-shadow: 1rem 1rem $whiteShade;
+}

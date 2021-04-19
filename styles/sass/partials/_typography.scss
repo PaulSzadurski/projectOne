@@ -1,0 +1,76 @@
+@import 'variables';
+
+html {
+  font-size: 125%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $black;
+  line-height: 1.8rem;
+}
+
+h1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.1rem;
+  // test
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.6rem;
+  // test
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+section a,
+.title {
+  font-family: 'Abril Fatface', sans-serif;
+}
+
+h1, 
+nav {
+  color: $whiteShade;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+nav {
+  text-transform: uppercase;
+}
+
+i {
+  font-size: 1.3rem;
+}
+
+// other test
+p {
+  margin: 0;
+}
+
+// links
+section a {
+  background-color: $accent;
+  padding: 0.8rem 1.25rem;
+}
