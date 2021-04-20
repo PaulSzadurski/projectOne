@@ -271,9 +271,14 @@ h3 {
   margin-top: 0;
 }
 
+h4 {
+  font-size: 1.2rem;
+}
+
 h1,
 h2,
 h3,
+h4,
 section a,
 .title {
   font-family: 'Abril Fatface', sans-serif;
@@ -289,6 +294,8 @@ nav {
   font-size: 2rem;
 }
 
+h3,
+h4,
 nav {
   text-transform: uppercase;
 }
@@ -479,6 +486,128 @@ input[type=submit] {
   font-family: 'Abril Fatface', sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
+  padding: 1rem;
+}
+
+.blogHeader {
+  height: 60vh;
+  background-image: url(../assets/blog-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.blogHeader h1 {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  height: 3.9rem;
+}
+
+main {
+  padding-top: 5rem;
+  background-color: #f6f6f6;
+}
+
+.blogFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+aside,
+.blogFlex section,
+article {
+  background-color: white;
+}
+
+aside {
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+aside ul {
+  list-style: disc inside;
+}
+
+.asideFlex {
+  width: calc(30% - 1rem);
+}
+
+.articleFlex {
+  width: calc(70% - 1rem);
+}
+
+article {
+  border-bottom: solid #709b6b 0.25rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+.articleFlex section:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.articleFlex section:last-child {
+  border-bottom: solid #709b6b 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.comments p {
+  padding: 0;
+}
+
+.comments section {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comments img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 1rem;
+}
+
+.articleFlex form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.articleFlex input,
+.articleFlex textarea {
+  margin-bottom: 1rem;
+}
+
+.commentInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.commentInfo input {
+  width: 49%;
 }
 
 .wrapper {

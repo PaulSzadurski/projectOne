@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Willow's Blog</title>
   <link rel="stylesheet" href="../styles/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap"
     rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="blogHeader">
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -21,32 +21,18 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <h1>Blog & News</h1>
+    <div class="wrapper">
+      <h1>Blog & News</h1>
+    </div>
   </header>
 
   <main>
-    <div class="wrapper">
-      <div class="asideFlex">
-        <aside>
-          <img src="../assets/blog-image-2.jpg" alt="">
-          <h4>About Willow</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat omnis fugit beatae eius veniam aperiam earum laborum ducimus commodi. <a href="">Find out more</a></p>
-        </aside>
-        <aside>
-          <h4>Recent Posts</h4>
-          <ul>
-            <li>Lorem ipsum dolor sit.</li>
-            <li>Sapiente inventore optio eaque!</li>
-            <li>Asperiores minima perspiciatis distinctio!</li>
-            <li>Cumque eos consectetur sit!</li>
-          </ul>
-        </aside>
-      </div>
+    <div class="wrapper blogFlex">
     
       <div class="articleFlex">
         <article>
           <h3>My Favourite Travel Destinations</h3>
-          <h5>Monday October 8th, 2018 by Willow</h5>
+          <p>Monday October 8th, 2018 by Willow<p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eius esse dolor similique iusto voluptate vero voluptatem, aut minima optio magni mollitia distinctio veniam harum illo quia doloribus necessitatibus nam nemo et vel. Maiores, dignissimos?</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde distinctio illum perspiciatis consectetur nam aliquam inventore nemo, esse quo vero at itaque voluptas voluptates autem ratione voluptatibus placeat accusamus? Optio, veniam tenetur voluptatum amet minima vero neque, in illum pariatur, ad accusantium vitae nisi adipisci.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, doloribus repellat, aliquam harum molestiae, eos ipsum nihil asperiores voluptates facere blanditiis ipsa modi nam voluptatibus itaque at distinctio. Quia quas illo sapiente numquam. Aspernatur unde cum quasi accusantium esse perferendis cumque magni voluptates debitis ducimus voluptate voluptas aliquam odit molestias, tempore perspiciatis quaerat. Quisquam autem pariatur deserunt corrupti est at! Veritatis, voluptas id. Aut rem quis tenetur hic porro aliquid consectetur quos sequi impedit. Reiciendis laboriosam voluptatibus incidunt, id necessitatibus rerum minus unde maiores similique soluta dicta inventore, fugit officia non molestiae animi praesentium. Natus quis sit quas vel impedit tempore modi hic officia maxime quae similique est quibusdam neque nostrum quam ut, placeat, corporis facere nisi, iure voluptas. Cupiditate sint enim voluptatum qui saepe unde veniam corporis nulla recusandae, incidunt deleniti voluptatem laborum nihil eius fugiat maiores quidem placeat ratione quam distinctio amet aperiam ducimus. Temporibus facere similique perspiciatis!</p>
@@ -57,27 +43,51 @@
         <div class="comments">
           <section>
             <img src="../assets/blog-image-3.jpg" alt="">
-            <h5>Tuesday October 9th, 2018 by Barb</h5>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, pariatur eos. Vitae, eius veniam quam odio ea quo explicabo dolorem deleniti voluptatibus, dolor dolores, fugiat facilis. Atque fuga nisi, quis itaque quidem, nemo asperiores temporibus, ipsum praesentium omnis a dolorum?</p>
+            <div class="commentText">
+              <p>Tuesday October 9th, 2018 by Barb</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, pariatur eos. Vitae, eius veniam quam odio ea quo explicabo dolorem deleniti voluptatibus, dolor dolores, fugiat facilis. Atque fuga nisi, quis itaque quidem, nemo asperiores temporibus, ipsum praesentium omnis a dolorum?</p>
+            </div>
           </section>
           <section>
             <img src="../assets/blog-image-4.jpg" alt="">
-            <h5>Wednesday October 10, 2018 by Daisy</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ullam voluptas sequi similique laudantium veniam perspiciatis voluptatem neque debitis facere ipsam, repellat nostrum ipsa possimus nisi natus sed impedit eligendi incidunt iure doloribus hic veritatis pariatur! Dolorem cumque consectetur quidem?</p>
+            <div class="commentText">
+              <p>Wednesday October 10, 2018 by Daisy</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ullam voluptas sequi similique laudantium veniam perspiciatis voluptatem neque debitis facere ipsam, repellat nostrum ipsa possimus nisi natus sed impedit eligendi incidunt iure doloribus hic veritatis pariatur! Dolorem cumque consectetur quidem?</p>
+            </div>
           </section>
         </div>
         <form action="submit">
-          <label for="username">Your Name:</label>
-          <input type="text" name="username" id="username" placeholder="Name">
+          <div class="commentInfo">
+            <label for="username" class="sr-only">Your Name:</label>
+            <input type="text" name="username" id="username" placeholder="Name">
 
-          <label for="email">Your Email Address:</label>
-          <input type="email" name="email" id="email" placeholder="Email Address">
+            <label for="email" class="sr-only">Your Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="Email Address">
+          </div>
 
-          <label for="comment">Write a Comment:</label>
+          <label for="comment" class="sr-only">Write a Comment:</label>
           <textarea name="comment" id="comment" placeholder="Comment" rows="10"></textarea>
 
           <input type="submit" value="Post Comment">
         </form>
+      </div>
+
+      <div class="asideFlex">
+        <aside>
+          <img src="../assets/blog-image-2.jpg" alt="">
+          <h4>About Willow</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat omnis fugit beatae eius veniam aperiam
+            earum laborum ducimus commodi. <a href="">Find out more</a></p>
+        </aside>
+        <aside>
+          <h4>Recent Posts</h4>
+          <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Sapiente inventore optio eaque!</li>
+            <li>Asperiores minima perspiciatis distinctio!</li>
+            <li>Cumque eos consectetur sit!</li>
+          </ul>
+        </aside>
       </div>
     </div>
 
