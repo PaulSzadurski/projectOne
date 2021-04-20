@@ -517,6 +517,21 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+}
+
+.circleIcon {
+  background: #e4a436;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.infoSubFlex i {
+  position: absolute;
+  top: -0.5rem;
+  left: -3rem;
 }
 
 .infoText {

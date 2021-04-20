@@ -134,11 +134,31 @@ footer {
   flex-wrap: wrap;
 }
 
+
 .infoSubFlex {
   width: calc(50% - 4rem);
   margin-left: 4rem;
   display: flex;
+  position: relative;
 }
+
+.circleIcon {
+  background: $accent;
+  // width: 2rem;
+  // height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  // line-height: 5rem;
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.infoSubFlex i {
+  position: absolute;
+  top: -0.5rem;
+  left: -3rem;
+}
+
 
 .infoText {
   margin-left: 1rem;
