@@ -9,9 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap"
   rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1adebb3231.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
+  <header class="contactHeader">
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -21,9 +22,40 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <h1>Contact Me</h1>
   </header>
 
-  <main></main>
+  <main>
+    <section class="contactInfo">
+      <ul>
+        <li class="contactIcons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-instagram"></i>
+        </li>
+        <li class="infoEmail">info@email.com</li>
+        <li>123 - 456 - 7890</li>
+        <li>123 Queen Street West, Unit 10</li>
+        <li>Toronto, Ontario</li>
+        <li>M5V2D5</li>
+      </ul>
+    </section>
+    <form action="submit">
+      <div class=formFlex>
+        <label for="username" class="sr-only">Your Name:</label>
+        <input type="text" name="username" id="username" placeholder="Name">
+        
+        <label for="email" class="sr-only">Your Email Address:</label>
+        <input type="email" name="email" id="email" placeholder="Email Address">
+      </div>
+
+      <label for="message">Write a Message:</label>
+      <input type="textarea" name="message" id="message" placeholder="message">
+
+      <input type="submit" value="Submit">
+    </form>
+  </main>
 
   <footer><section class="copyright">Copyright © 2018 HackerYou</section></footer>
 </body>
