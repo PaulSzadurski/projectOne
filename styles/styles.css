@@ -306,12 +306,13 @@ section a {
   padding: 0.8rem 1.25rem;
 }
 
-header {
+nav {
   background-color: #345231;
 }
 
 .homeHeader {
   height: 80vh;
+  background-color: #345231;
 }
 
 nav {
@@ -374,6 +375,93 @@ header img {
   background-color: #1f1f1f;
   text-align: center;
   padding: 0.5rem 0 0.5rem 0;
+}
+
+.contactHeader {
+  height: 60vh;
+  background-image: url(../assets/contact-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.contactHeader h1 {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  height: 3.9rem;
+}
+
+main {
+  background: #f6f6f6;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+
+.contactInfo {
+  width: 30%;
+  background: white;
+  padding: 2.5rem 2rem;
+}
+
+.contactInfo i {
+  color: #345231;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+
+.contactInfo li:nth-child(2) {
+  font-weight: bold;
+  padding: 1.2rem 0;
+}
+
+.contactForm {
+  margin-left: 2rem;
+  width: calc(70% - 2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactForm > * {
+  padding-bottom: 1rem;
+}
+
+.formFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formFlex input {
+  width: 49%;
+}
+
+.contactText textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.contactSubmit {
+  padding-bottom: 0;
+}
+
+.contactSubmit input {
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper {

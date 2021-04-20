@@ -22,39 +22,46 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <h1>Contact Me</h1>
+    <div class="wrapper">
+      <h1>Contact Me</h1>
+    </div>
   </header>
 
   <main>
-    <section class="contactInfo">
-      <ul>
-        <li class="contactIcons">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-linkedin-in"></i>
-          <i class="fab fa-instagram"></i>
-        </li>
-        <li class="infoEmail">info@email.com</li>
-        <li>123 - 456 - 7890</li>
-        <li>123 Queen Street West, Unit 10</li>
-        <li>Toronto, Ontario</li>
-        <li>M5V2D5</li>
-      </ul>
-    </section>
-    <form action="submit">
-      <div class=formFlex>
-        <label for="username" class="sr-only">Your Name:</label>
-        <input type="text" name="username" id="username" placeholder="Name">
-        
-        <label for="email" class="sr-only">Your Email Address:</label>
-        <input type="email" name="email" id="email" placeholder="Email Address">
-      </div>
+    <div class="wrapper contactFlex">
+      <section class="contactInfo">
+        <ul>
+          <li class="contactIcons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-instagram"></i>
+          </li>
+          <li class="infoEmail">info@email.com</li>
+          <li>123 - 456 - 7890</li>
+          <li>123 Queen Street West, Unit 10</li>
+          <li>Toronto, Ontario</li>
+          <li>M5V2D5</li>
+        </ul>
+      </section>
+      <form action="submit" class="contactForm">
+        <div class=formFlex>
+          <label for="username" class="sr-only">Your Name:</label>
+          <input type="text" name="username" id="username" placeholder="Name">
+          
+          <label for="email" class="sr-only">Your Email Address:</label>
+          <input type="email" name="email" id="email" placeholder="Email Address">
+        </div>
 
-      <label for="message">Write a Message:</label>
-      <input type="textarea" name="message" id="message" placeholder="message">
-
-      <input type="submit" value="Submit">
-    </form>
+        <div class="contactText">
+          <label for="message" class="sr-only">Write a Message:</label>
+          <textarea name="message" id="message" placeholder="Message" rows="10"></textarea>
+        </div>
+        <div class="contactSubmit">
+          <input type="submit" value="Post Comment">
+        </div>
+      </form>
+    </div>
   </main>
 
   <footer><section class="copyright">Copyright © 2018 HackerYou</section></footer>
