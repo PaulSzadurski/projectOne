@@ -42,7 +42,7 @@ section p {
 }
 
 .favouriteImg img {
-  box-shadow: 1rem 1rem $greenGrey, -20rem 1rem $greenGrey;
+  box-shadow: 1rem 1rem $greenGrey, -20vw 1rem $greenGrey;
   position: absolute;
   display: block;
   top: -3rem;
@@ -90,10 +90,11 @@ section p {
 }
 
 .bucketImg img {
-  box-shadow: 1rem 1rem $pine, 20rem 1rem $pine;
+  box-shadow: 1rem 1rem $pine, 20vw 1rem $pine;
   display: block;
   position: absolute;
   bottom: -3rem;
+  width: 100%;
 }
 
 // journey
@@ -112,6 +113,7 @@ section p {
 
 .homeJourney img {
   box-shadow: 1rem 1rem $greenGrey;
+  align-self: flex-start;
 }
 
 // splitter image
@@ -191,6 +193,13 @@ footer {
   .homeHeader h1 {
     font-size: 3rem;
   }
+
+//   .favouriteFlex,
+//   .bucketFlex,
+//   .journeyText {
+//     margin: 0;
+//     padding: 0;
+//   }
 }
 
 @media (max-width: 900px) {
@@ -201,14 +210,95 @@ footer {
   .homeFlex {
     padding: 0;
   }
-
-  // .homeHeader .desktopMenu {
-  //   flex-direction: column;
-  // }
 }
+
+@media (max-width: 786px) {
+  .favouriteFlex {
+    margin-left: 2.5rem;
+    width: 50%;
+  }
+
+  .bucketFlex {
+    padding-right: 2.5rem;
+    width: 50%;
+  }
+
+  .journeyText {
+    padding-left: 2.5rem;
+    width: 50%;
+  }
+
+  .homeInfo {
+    flex-direction: column;
+  }
+
+  .infoSubFlex {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 668px) {
+  .journeyText {
+    padding-left: 1.5rem;
+  }
+
+  .journeyFlex img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 640px) {
+  .favouriteImg,
+  .bucketImg,
+  .homeJourney img {
+    display: none;
+  }
+
+  .favouriteFlex,
+  .bucketFlex,
+  .journeyText {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gallery {
+  flex-direction: column;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+
+  .gallery img:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .infoSubFlex h3 {
+    text-align: center;
+  }
+
+  .infoSubFlex i {
+  left: -1.5rem;
+}
+}
+
 
 @media (max-width: 563px) {
   .homeFlex {
     padding: 2rem;
+  }
+
+  .homeFlex img {
+    width: 100vw;
+    box-shadow: none;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 368px) {
+  .homeHeader {
+    height: 60vh;
   }
 }

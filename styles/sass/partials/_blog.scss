@@ -12,8 +12,7 @@
 .blogHeader h1 {
   position: absolute;
   margin: 0;
-  bottom: 0;
-  height: 3.9rem;
+  bottom: 0.5rem;
 }
 
 // main
@@ -41,6 +40,10 @@ aside {
 
 aside ul {
   list-style: disc inside;
+}
+
+aside img {
+  width: 100%;
 }
 
 .asideFlex {
@@ -104,4 +107,59 @@ article p {
 
 .commentInfo input {
   width: 49%;
+}
+
+// blog media queries
+@media (max-width: 1226px) {
+  .blogHeader h1 {
+    font-size: 6rem;
+    bottom: 0rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .blogFlex {
+    flex-direction: column;
+  }
+
+  .asideFlex,
+  .articleFlex {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .comments section p:first-child {
+    padding-bottom: 1rem;
+  }
+
+  .articleFlex .commentInfo {
+    flex-direction: column;
+  }
+
+  .articleFlex form input {
+    width: 100%;
+  }
+
+  .articleFlex input[type=text] {
+    margin-bottom: 1rem;
+  }
+  }
+
+
+@media (max-width: 509px) {
+  .blogHeader h1 {
+    font-size: 3rem;
+    bottom: -1.1rem;
+  }
+
+@media (max-width: 350px) {
+  article h3 {
+    font-size: 1.2rem;
+  }
+
+  .comments img {
+    display: none;
+  }
+  }
 }

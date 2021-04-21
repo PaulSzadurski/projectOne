@@ -71,6 +71,10 @@ nav input {
 
 // nav media queries
 @media (max-width: 563px) {
+  nav {
+    padding-bottom: 3rem;
+  }
+  
   .desktopMenu {
     display: none;
   }

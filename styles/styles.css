@@ -259,6 +259,7 @@ body {
 h1 {
   font-size: 8rem;
   text-transform: uppercase;
+  line-height: 4.55rem;
 }
 
 h2 {
@@ -288,6 +289,10 @@ h1,
 nav {
   color: #f6f6f6;
   font-weight: bold;
+}
+
+.currentPage {
+  color: #e4a436;
 }
 
 .title {
@@ -395,6 +400,9 @@ nav input {
 }
 
 @media (max-width: 563px) {
+  nav {
+    padding-bottom: 3rem;
+  }
   .desktopMenu {
     display: none;
   }
@@ -453,8 +461,7 @@ nav input {
 .contactHeader h1 {
   position: absolute;
   margin: 0;
-  bottom: 0;
-  height: 3.9rem;
+  bottom: 0.75rem;
 }
 
 .contactMain {
@@ -532,6 +539,61 @@ nav input {
   height: 100%;
 }
 
+@media (max-width: 1149px) {
+  .contactHeader h1 {
+    font-size: 6rem;
+    bottom: 0rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactInfo,
+  .contactForm {
+    width: 100%;
+  }
+  .contactInfo {
+    margin-bottom: 1rem;
+  }
+  .contactForm {
+    margin: 0;
+  }
+}
+
+@media (max-width: 863px) {
+  .contactHeader h1 {
+    font-size: 4rem;
+    bottom: -0.75rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .formFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .formFlex input {
+    width: 100%;
+  }
+  .formFlex input[type=text] {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 423px) {
+  .contactHeader h1 {
+    font-size: 3rem;
+    bottom: -1.1rem;
+  }
+}
+
 input, textarea {
   border: none;
   padding: 1.5rem;
@@ -558,8 +620,7 @@ input[type=submit] {
 .blogHeader h1 {
   position: absolute;
   margin: 0;
-  bottom: 0;
-  height: 3.9rem;
+  bottom: 0.5rem;
 }
 
 .blogMain {
@@ -593,6 +654,10 @@ aside {
 
 aside ul {
   list-style: disc inside;
+}
+
+aside img {
+  width: 100%;
 }
 
 .asideFlex {
@@ -668,6 +733,60 @@ article p {
   width: 49%;
 }
 
+@media (max-width: 1226px) {
+  .blogHeader h1 {
+    font-size: 6rem;
+    bottom: 0rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .blogFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .asideFlex,
+  .articleFlex {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .comments section p:first-child {
+    padding-bottom: 1rem;
+  }
+  .articleFlex .commentInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .articleFlex form input {
+    width: 100%;
+  }
+  .articleFlex input[type=text] {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 509px) {
+  .blogHeader h1 {
+    font-size: 3rem;
+    bottom: -1.1rem;
+  }
+}
+
+@media (max-width: 509px) and (max-width: 350px) {
+  article h3 {
+    font-size: 1.2rem;
+  }
+  .comments img {
+    display: none;
+  }
+}
+
 .wrapper {
   margin: 0 auto;
   width: 80%;
@@ -700,8 +819,8 @@ section p {
 }
 
 .favouriteImg img {
-  -webkit-box-shadow: 1rem 1rem #709b6b, -20rem 1rem #709b6b;
-          box-shadow: 1rem 1rem #709b6b, -20rem 1rem #709b6b;
+  -webkit-box-shadow: 1rem 1rem #709b6b, -20vw 1rem #709b6b;
+          box-shadow: 1rem 1rem #709b6b, -20vw 1rem #709b6b;
   position: absolute;
   display: block;
   top: -3rem;
@@ -743,11 +862,12 @@ section p {
 }
 
 .bucketImg img {
-  -webkit-box-shadow: 1rem 1rem #345231, 20rem 1rem #345231;
-          box-shadow: 1rem 1rem #345231, 20rem 1rem #345231;
+  -webkit-box-shadow: 1rem 1rem #345231, 20vw 1rem #345231;
+          box-shadow: 1rem 1rem #345231, 20vw 1rem #345231;
   display: block;
   position: absolute;
   bottom: -3rem;
+  width: 100%;
 }
 
 .homeJourney {
@@ -768,6 +888,8 @@ section p {
 .homeJourney img {
   -webkit-box-shadow: 1rem 1rem #709b6b;
           box-shadow: 1rem 1rem #709b6b;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .homeImage {
@@ -858,8 +980,87 @@ footer {
   }
 }
 
+@media (max-width: 786px) {
+  .favouriteFlex {
+    margin-left: 2.5rem;
+    width: 50%;
+  }
+  .bucketFlex {
+    padding-right: 2.5rem;
+    width: 50%;
+  }
+  .journeyText {
+    padding-left: 2.5rem;
+    width: 50%;
+  }
+  .homeInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .infoSubFlex {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 668px) {
+  .journeyText {
+    padding-left: 1.5rem;
+  }
+  .journeyFlex img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 640px) {
+  .favouriteImg,
+  .bucketImg,
+  .homeJourney img {
+    display: none;
+  }
+  .favouriteFlex,
+  .bucketFlex,
+  .journeyText {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery img {
+    width: 100%;
+  }
+  .gallery img:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .infoSubFlex h3 {
+    text-align: center;
+  }
+  .infoSubFlex i {
+    left: -1.5rem;
+  }
+}
+
 @media (max-width: 563px) {
   .homeFlex {
     padding: 2rem;
+  }
+  .homeFlex img {
+    width: 100vw;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 368px) {
+  .homeHeader {
+    height: 60vh;
   }
 }

@@ -12,8 +12,7 @@
 .contactHeader h1 {
   position: absolute;
   margin: 0;
-  bottom: 0;
-  height: 3.9rem;
+  bottom: 0.75rem;
 }
 
 // main
@@ -82,4 +81,59 @@
 .contactSubmit input {
   width: 100%;
   height: 100%;
+}
+
+// media queries
+@media (max-width: 1149px) {
+  .contactHeader h1 {
+    font-size: 6rem;
+    bottom: 0rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .contactFlex {
+    flex-direction: column;
+  }
+
+  .contactInfo,
+  .contactForm {
+    width: 100%;
+  }
+
+  .contactInfo {
+    margin-bottom: 1rem;
+  }
+
+  .contactForm {
+    margin: 0;
+  }
+}
+
+@media (max-width: 863px) {
+  .contactHeader h1 {
+    font-size: 4rem;
+    bottom: -0.75rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .formFlex {
+    flex-direction: column;
+  }
+
+  .formFlex input {
+    width: 100%;
+  }
+
+  .formFlex input[type=text] {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 423px) {
+  .contactHeader h1 {
+    font-size: 3rem;
+    bottom: -1.1rem;
+  }
 }
