@@ -9,12 +9,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap"
     rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1adebb3231.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="blogHeader">
     <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
+      <div class="navIcon wrapper">
+        <label for="menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" name="menu" id="menu">
+        <ul class="mobileMenu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <ul class="desktopMenu">
+        <li><a href="">Home</a></li>
         <li><a href="">About</a></li>
         <li class="title">Willow</li>
         <li><a href="blog.html">Blog</a></li>
@@ -26,7 +37,7 @@
     </div>
   </header>
 
-  <main class="blogMain">
+  <main>
     <div class="wrapper blogFlex">
     
       <div class="articleFlex">
