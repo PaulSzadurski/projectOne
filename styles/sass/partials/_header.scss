@@ -70,7 +70,7 @@ nav input {
 }
 
 // nav media queries
-@media (max-width: 480px) {
+@media (max-width: 563px) {
   .desktopMenu {
     display: none;
   }
@@ -108,5 +108,11 @@ nav input {
   // input for the menu
   input[type=checkbox]:checked + .mobileMenu {
     right: 5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .navIcon {
+    padding-right: 1rem;
   }
 }

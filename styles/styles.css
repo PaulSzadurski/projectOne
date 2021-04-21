@@ -394,7 +394,7 @@ nav input {
   z-index: 10;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 563px) {
   .desktopMenu {
     display: none;
   }
@@ -426,6 +426,12 @@ nav input {
   }
   input[type=checkbox]:checked + .mobileMenu {
     right: 5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .navIcon {
+    padding-right: 1rem;
   }
 }
 
@@ -672,7 +678,7 @@ section p {
 }
 
 .homeWho {
-  padding: 4rem 0 8.5rem 0;
+  padding: 6rem 0 8.5rem 0;
   text-align: center;
   background-color: #f6f6f6;
 }
@@ -823,4 +829,37 @@ footer {
 
 .infoText {
   margin-left: 1rem;
+}
+
+@media (max-width: 1345px) {
+  .homeHeader h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 1166px) {
+  .homeHeader h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .homeHeader h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .homeHeader h1 {
+    display: none;
+  }
+  .homeFlex {
+    padding: 0;
+  }
+}
+
+@media (max-width: 563px) {
+  .homeFlex {
+    padding: 2rem;
+  }
 }
