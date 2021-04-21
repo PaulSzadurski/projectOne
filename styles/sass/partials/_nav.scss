@@ -1,0 +1,38 @@
+@import "variables";
+
+nav {
+  background-color: $pine;
+}
+
+nav {
+  padding-bottom: 1rem;
+}
+
+.desktopMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  padding-left: 2.25rem;
+  padding-top: 1.25rem;
+}
+
+// nav icon
+.navIcon, 
+.mobileMenu, 
+nav input {
+  display: none;
+}
+
+.mobileMenu li {
+  padding: 1rem 0;
+}
+
+.navIcon i {
+  font-size: 2rem;
+  z-index: 10;
+}
+

@@ -322,11 +322,6 @@ nav {
   background-color: #345231;
 }
 
-.homeHeader {
-  height: 80vh;
-  background-color: #345231;
-}
-
 nav {
   padding-bottom: 1rem;
 }
@@ -350,40 +345,6 @@ nav li {
   padding-top: 1.25rem;
 }
 
-.homeFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 3rem;
-}
-
-.homeFlex h1 {
-  padding-right: 1.25rem;
-  position: relative;
-}
-
-.homeFlex h1::before {
-  background: url(../assets/circle-text.png) no-repeat;
-  content: '';
-  display: block;
-  position: absolute;
-  top: -4rem;
-  left: -3rem;
-  height: 500px;
-  width: 500px;
-}
-
-header img {
-  -webkit-box-shadow: 1rem 1rem #f6f6f6;
-          box-shadow: 1rem 1rem #f6f6f6;
-}
-
 .navIcon,
 .mobileMenu,
 nav input {
@@ -397,50 +358,6 @@ nav input {
 .navIcon i {
   font-size: 2rem;
   z-index: 10;
-}
-
-@media (max-width: 563px) {
-  nav {
-    padding-bottom: 3rem;
-  }
-  .desktopMenu {
-    display: none;
-  }
-  .mobileMenu {
-    display: inline-block;
-    position: fixed;
-    z-index: 10;
-    width: 50%;
-    right: -50%;
-    top: 0;
-    background: rgba(0, 0, 0, 0.541);
-    text-align: center;
-    height: 15rem;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .mobileMenu a {
-    display: inline-block;
-  }
-  .navIcon {
-    display: block;
-    width: 100%;
-    text-align: end;
-    padding-top: 1.25rem;
-  }
-  .navIcon i {
-    position: fixed;
-    -webkit-text-stroke: 0.05rem #1f1f1f;
-  }
-  input[type=checkbox]:checked + .mobileMenu {
-    right: 5rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .navIcon {
-    padding-right: 1rem;
-  }
 }
 
 .copyright {
@@ -537,61 +454,6 @@ nav input {
 .contactSubmit input {
   width: 100%;
   height: 100%;
-}
-
-@media (max-width: 1149px) {
-  .contactHeader h1 {
-    font-size: 6rem;
-    bottom: 0rem;
-  }
-}
-
-@media (max-width: 900px) {
-  .contactFlex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contactInfo,
-  .contactForm {
-    width: 100%;
-  }
-  .contactInfo {
-    margin-bottom: 1rem;
-  }
-  .contactForm {
-    margin: 0;
-  }
-}
-
-@media (max-width: 863px) {
-  .contactHeader h1 {
-    font-size: 4rem;
-    bottom: -0.75rem;
-  }
-}
-
-@media (max-width: 560px) {
-  .formFlex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .formFlex input {
-    width: 100%;
-  }
-  .formFlex input[type=text] {
-    margin-bottom: 1rem;
-  }
-}
-
-@media (max-width: 423px) {
-  .contactHeader h1 {
-    font-size: 3rem;
-    bottom: -1.1rem;
-  }
 }
 
 input, textarea {
@@ -733,63 +595,43 @@ article p {
   width: 49%;
 }
 
-@media (max-width: 1226px) {
-  .blogHeader h1 {
-    font-size: 6rem;
-    bottom: 0rem;
-  }
+.homeHeader {
+  height: 80vh;
+  background-color: #345231;
 }
 
-@media (max-width: 1024px) {
-  .blogFlex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .asideFlex,
-  .articleFlex {
-    width: 100%;
-  }
+.homeFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3rem;
 }
 
-@media (max-width: 560px) {
-  .comments section p:first-child {
-    padding-bottom: 1rem;
-  }
-  .articleFlex .commentInfo {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .articleFlex form input {
-    width: 100%;
-  }
-  .articleFlex input[type=text] {
-    margin-bottom: 1rem;
-  }
+.homeFlex h1 {
+  padding-right: 1.25rem;
+  position: relative;
 }
 
-@media (max-width: 509px) {
-  .blogHeader h1 {
-    font-size: 3rem;
-    bottom: -1.1rem;
-  }
+.homeFlex h1::before {
+  background: url(../assets/circle-text.png) no-repeat;
+  content: '';
+  display: block;
+  position: absolute;
+  top: -4rem;
+  left: -3rem;
+  height: 500px;
+  width: 500px;
 }
 
-@media (max-width: 509px) and (max-width: 350px) {
-  article h3 {
-    font-size: 1.2rem;
-  }
-  .comments img {
-    display: none;
-  }
-}
-
-.wrapper {
-  margin: 0 auto;
-  width: 80%;
+header img {
+  -webkit-box-shadow: 1rem 1rem #f6f6f6;
+          box-shadow: 1rem 1rem #f6f6f6;
 }
 
 section p {
@@ -804,11 +646,11 @@ section p {
 
 .homeMain section:nth-child(2),
 .homeMain section:nth-child(3) {
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .homeFavourites {
-  padding-bottom: 4rem;
+  padding-bottom: 14rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -839,7 +681,7 @@ section p {
 }
 
 .homeBucket {
-  margin-top: 6rem;
+  margin-top: 8rem;
   padding-bottom: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -959,9 +801,36 @@ footer {
   }
 }
 
+@media (max-width: 1226px) {
+  .blogHeader h1 {
+    font-size: 6rem;
+    bottom: 0rem;
+  }
+}
+
 @media (max-width: 1166px) {
   .homeHeader h1 {
     font-size: 4rem;
+  }
+}
+
+@media (max-width: 1149px) {
+  .contactHeader h1 {
+    font-size: 6rem;
+    bottom: 0rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .blogFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .asideFlex,
+  .articleFlex {
+    width: 100%;
   }
 }
 
@@ -977,6 +846,29 @@ footer {
   }
   .homeFlex {
     padding: 0;
+  }
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactInfo,
+  .contactForm {
+    width: 100%;
+  }
+  .contactInfo {
+    margin-bottom: 1rem;
+  }
+  .contactForm {
+    margin: 0;
+  }
+}
+
+@media (max-width: 863px) {
+  .contactHeader h1 {
+    font-size: 4rem;
+    bottom: -0.75rem;
   }
 }
 
@@ -1048,6 +940,41 @@ footer {
 }
 
 @media (max-width: 563px) {
+  nav {
+    padding-bottom: 3rem;
+  }
+  .desktopMenu {
+    display: none;
+  }
+  .mobileMenu {
+    display: inline-block;
+    position: fixed;
+    z-index: 10;
+    width: 50%;
+    right: -50%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.541);
+    text-align: center;
+    height: 15rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .mobileMenu a {
+    display: inline-block;
+  }
+  .navIcon {
+    display: block;
+    width: 100%;
+    text-align: end;
+    padding-top: 1.25rem;
+  }
+  .navIcon i {
+    position: fixed;
+    -webkit-text-stroke: 0.05rem #1f1f1f;
+  }
+  input[type=checkbox]:checked + .mobileMenu {
+    right: 5rem;
+  }
   .homeFlex {
     padding: 2rem;
   }
@@ -1059,8 +986,72 @@ footer {
   }
 }
 
-@media (max-width: 368px) {
+@media (max-width: 560px) {
+  .comments section p:first-child {
+    padding-bottom: 1rem;
+  }
+  .articleFlex .commentInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .articleFlex form input {
+    width: 100%;
+  }
+  .articleFlex input[type=text] {
+    margin-bottom: 1rem;
+  }
+  .formFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .formFlex input {
+    width: 100%;
+  }
+  .formFlex input[type=text] {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 509px) {
+  .blogHeader h1 {
+    font-size: 3rem;
+    bottom: -1.1rem;
+  }
+}
+
+@media (max-width: 509px) and (max-width: 423px) {
+  .contactHeader h1 {
+    font-size: 3rem;
+    bottom: -1.1rem;
+  }
+}
+
+@media (max-width: 509px) and (max-width: 368px) {
   .homeHeader {
     height: 60vh;
   }
+}
+
+@media (max-width: 509px) and (max-width: 350px) {
+  article h3 {
+    font-size: 1.2rem;
+  }
+  .comments img {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .navIcon {
+    padding-right: 1rem;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
 }

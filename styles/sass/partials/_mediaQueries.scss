@@ -1,0 +1,290 @@
+@media (max-width: 1345px) {
+  // home page
+  .homeHeader h1 {
+  font-size: 6rem;
+  }
+}
+
+@media (max-width: 1226px) {
+  // blog page
+  .blogHeader h1 {
+    font-size: 6rem;
+    bottom: 0rem;
+  }
+}
+
+@media (max-width: 1166px) {
+  // home page
+  .homeHeader h1 {
+  font-size: 4rem;
+  }
+}
+
+@media (max-width: 1149px) {
+  // contact page
+  .contactHeader h1 {
+    font-size: 6rem;
+    bottom: 0rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  // blog page
+  .blogFlex {
+    flex-direction: column;
+  }
+
+  .asideFlex,
+  .articleFlex {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  // home page
+  .homeHeader h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  // home page
+  .homeHeader h1 {
+    display: none;
+  }
+
+  .homeFlex {
+    padding: 0;
+  }
+
+  // contact page
+  .contactFlex {
+  flex-direction: column;
+  }
+
+  .contactInfo,
+  .contactForm {
+    width: 100%;
+  }
+
+  .contactInfo {
+    margin-bottom: 1rem;
+  }
+
+  .contactForm {
+    margin: 0;
+  }
+}
+
+@media (max-width: 863px) {
+  // contact page
+  .contactHeader h1 {
+    font-size: 4rem;
+    bottom: -0.75rem;
+  }
+}
+
+@media (max-width: 786px) {
+  // home page
+  .favouriteFlex {
+    margin-left: 2.5rem;
+    width: 50%;
+  }
+
+  .bucketFlex {
+    padding-right: 2.5rem;
+    width: 50%;
+  }
+
+  .journeyText {
+    padding-left: 2.5rem;
+    width: 50%;
+  }
+
+  .homeInfo {
+    flex-direction: column;
+  }
+
+  .infoSubFlex {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 668px) {
+  // home page
+  .journeyText {
+    padding-left: 1.5rem;
+  }
+
+  .journeyFlex img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 640px) {
+  // home page
+  .favouriteImg,
+  .bucketImg,
+  .homeJourney img {
+    display: none;
+  }
+
+  .favouriteFlex,
+  .bucketFlex,
+  .journeyText {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gallery {
+  flex-direction: column;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+
+  .gallery img:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .infoSubFlex h3 {
+    text-align: center;
+  }
+
+  .infoSubFlex i {
+  left: -1.5rem;
+  }
+}
+
+@media (max-width: 563px) {
+  // mobile burger nav and sliding menu appears here
+  nav {
+    padding-bottom: 3rem;
+  }
+  
+  .desktopMenu {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: inline-block;
+    position: fixed;
+    z-index: 10;
+    width: 50%;
+    right: -50%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.541);
+    text-align: center;
+    height: 15rem;
+    transition: all 0.3s;
+  }
+
+  .mobileMenu a {
+    display: inline-block;
+    // -webkit-text-stroke: 0.1rem $black;
+  }
+
+  .navIcon {
+    display: block;
+    width: 100%;
+    text-align: end;
+    padding-top: 1.25rem;
+  }
+
+  .navIcon i {
+    position: fixed;
+    -webkit-text-stroke: 0.05rem $black;
+  }
+
+  // input for the menu
+  input[type=checkbox]:checked + .mobileMenu {
+    right: 5rem;
+  }
+
+  // home page
+  .homeFlex {
+    padding: 2rem;
+  }
+
+  .homeFlex img {
+    width: 100vw;
+    box-shadow: none;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  // blog page
+  .comments section p:first-child {
+    padding-bottom: 1rem;
+  }
+
+  .articleFlex .commentInfo {
+    flex-direction: column;
+  }
+
+  .articleFlex form input {
+    width: 100%;
+  }
+
+  .articleFlex input[type=text] {
+    margin-bottom: 1rem;
+  }
+
+  // contact page
+  .formFlex {
+    flex-direction: column;
+  }
+
+  .formFlex input {
+    width: 100%;
+  }
+
+  .formFlex input[type=text] {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 509px) {
+  // blog page
+  .blogHeader h1 {
+    font-size: 3rem;
+    bottom: -1.1rem;
+  }
+
+@media (max-width: 423px) {
+  // contact page
+  .contactHeader h1 {
+    font-size: 3rem;
+    bottom: -1.1rem;
+  }
+}
+
+@media (max-width: 368px) {
+  // home page
+  .homeHeader {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 350px) {
+  // blog page
+  article h3 {
+    font-size: 1.2rem;
+  }
+
+  .comments img {
+    display: none;
+  }
+  }
+}
+
+@media (max-width: 320px) {
+  // mobile burger nav
+  .navIcon {
+    padding-right: 1rem;
+  }
+}
