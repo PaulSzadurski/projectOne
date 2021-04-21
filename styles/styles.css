@@ -399,7 +399,7 @@ header img {
   height: 3.9rem;
 }
 
-main {
+.contactMain {
   background: #f6f6f6;
 }
 
@@ -504,7 +504,7 @@ input[type=submit] {
   height: 3.9rem;
 }
 
-main {
+.blogMain {
   padding-top: 5rem;
   background-color: #f6f6f6;
 }
@@ -625,14 +625,16 @@ section p {
   background-color: #f6f6f6;
 }
 
+.homeMain section:nth-child(2),
+.homeMain section:nth-child(3) {
+  background-color: white;
+}
+
 .homeFavourites {
   padding-bottom: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .favouriteImg {
@@ -640,28 +642,27 @@ section p {
 }
 
 .favouriteImg img {
-  -webkit-box-shadow: 1rem 1rem #709b6b;
-          box-shadow: 1rem 1rem #709b6b;
+  -webkit-box-shadow: 1rem 1rem #709b6b, -20rem 1rem #709b6b;
+          box-shadow: 1rem 1rem #709b6b, -20rem 1rem #709b6b;
   position: absolute;
   display: block;
   top: -3rem;
+  width: 100%;
 }
 
-.favouriteImg,
-.favouriteFlex {
+.favouriteImg {
   width: 50%;
 }
 
 .favouriteFlex {
+  width: calc(50% - 5rem);
   padding-top: 2rem;
-  padding-left: 5rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  margin-left: 5rem;
   max-width: 50rem;
 }
 
 .homeBucket {
-  padding-top: 4rem;
+  margin-top: 6rem;
   padding-bottom: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -684,8 +685,8 @@ section p {
 }
 
 .bucketImg img {
-  -webkit-box-shadow: 1rem 1rem #345231;
-          box-shadow: 1rem 1rem #345231;
+  -webkit-box-shadow: 1rem 1rem #345231, 20rem 1rem #345231;
+          box-shadow: 1rem 1rem #345231, 20rem 1rem #345231;
   display: block;
   position: absolute;
   bottom: -3rem;

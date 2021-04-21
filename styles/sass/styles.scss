@@ -25,11 +25,16 @@ section p {
   background-color: $whiteShade;
 }
 
+// favourites and bucket
+.homeMain section:nth-child(2),
+.homeMain section:nth-child(3) {
+  background-color: white;
+}
+
 // favourite things
 .homeFavourites {
   padding-bottom: 4rem;
   display: flex;
-  justify-content: space-between;
 }
 
 .favouriteImg {
@@ -37,21 +42,23 @@ section p {
 }
 
 .favouriteImg img {
-  box-shadow: 1rem 1rem $greenGrey;
+  box-shadow: 1rem 1rem $greenGrey, -20rem 1rem $greenGrey;
   position: absolute;
   display: block;
   top: -3rem;
+  width: 100%;
 }
 
-.favouriteImg,
-.favouriteFlex {
+.favouriteImg {
   width: 50%;
 }
 
 .favouriteFlex {
+  width: calc(50% - 5rem);
   padding-top: 2rem;
-  padding-left: 5rem;
-  align-self: flex-end;
+  margin-left: 5rem;
+  // padding-left: 5rem;
+  // align-self: flex-end;
   max-width: 50rem;
   // display: flex;
   // flex-direction: column;
@@ -59,7 +66,7 @@ section p {
 
 // bucket list
 .homeBucket {
-  padding-top: 4rem;
+  margin-top: 6rem;
   padding-bottom: 1.5rem;
   display: flex;
 }
@@ -83,7 +90,7 @@ section p {
 }
 
 .bucketImg img {
-  box-shadow: 1rem 1rem $pine;
+  box-shadow: 1rem 1rem $pine, 20rem 1rem $pine;
   display: block;
   position: absolute;
   bottom: -3rem;
