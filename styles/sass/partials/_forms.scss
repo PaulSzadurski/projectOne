@@ -14,3 +14,19 @@ input[type=submit] {
   font-size: 1rem;
   padding: 1rem;
 }
+
+// form styling for blog and contact
+.formFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formFlex input {
+  width: 49%;
+}
+
+.articleFlex form,
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}

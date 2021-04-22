@@ -1,3 +1,5 @@
+@import 'variables';
+
 @media (max-width: 1345px) {
   // home page
   .homeHeader h1 {
@@ -176,7 +178,7 @@
     width: 50%;
     right: -50%;
     top: 0;
-    background: rgba(0, 0, 0, 0.541);
+    background: $blackMenu;
     text-align: center;
     height: 15rem;
     transition: all 0.3s;

@@ -239,41 +239,55 @@ html {
   font-size: 125%;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #1f1f1f;
+  line-height: 1.6rem;
+}
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: #1f1f1f;
-  line-height: 1.8rem;
+p {
+  margin: 0;
 }
 
 h1 {
   font-size: 8rem;
-  text-transform: uppercase;
   line-height: 4.55rem;
 }
 
 h2 {
   font-size: 2.1rem;
-  margin-top: 0;
 }
 
 h3 {
   font-size: 1.6rem;
-  margin-top: 0;
 }
 
 h4 {
   font-size: 1.2rem;
+}
+
+h1,
+nav {
+  color: #f6f6f6;
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.05rem;
 }
 
 h1,
@@ -286,9 +300,21 @@ section a,
 }
 
 h1,
+h2,
+h3,
+h4,
 nav {
-  color: #f6f6f6;
-  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section a {
+  background-color: #e4a436;
+  padding: 0.8rem 1.25rem;
 }
 
 .currentPage {
@@ -299,23 +325,8 @@ nav {
   font-size: 2rem;
 }
 
-h3,
-h4,
-nav {
-  text-transform: uppercase;
-}
-
 i {
   font-size: 1.3rem;
-}
-
-p {
-  margin: 0;
-}
-
-section a {
-  background-color: #e4a436;
-  padding: 0.8rem 1.25rem;
 }
 
 nav {
@@ -429,19 +440,6 @@ nav input {
   padding-bottom: 1rem;
 }
 
-.formFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.formFlex input {
-  width: 49%;
-}
-
 .contactText textarea {
   width: 100%;
   height: 100%;
@@ -469,6 +467,30 @@ input[type=submit] {
   text-transform: uppercase;
   font-size: 1rem;
   padding: 1rem;
+}
+
+.formFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formFlex input {
+  width: 49%;
+}
+
+.articleFlex form,
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .blogHeader {
@@ -580,19 +602,6 @@ article p {
 .articleFlex input,
 .articleFlex textarea {
   margin-bottom: 1rem;
-}
-
-.formFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.formFlex input {
-  width: 49%;
 }
 
 .homeHeader {
@@ -953,7 +962,7 @@ footer {
     width: 50%;
     right: -50%;
     top: 0;
-    background: rgba(0, 0, 0, 0.541);
+    background: #00000095;
     text-align: center;
     height: 15rem;
     -webkit-transition: all 0.3s;

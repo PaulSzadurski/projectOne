@@ -4,43 +4,58 @@ html {
   font-size: 125%;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $black;
+  line-height: 1.6rem;
+}
+
+// list styling
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: $black;
-  line-height: 1.8rem;
+// headings and p tags
+p {
+  margin: 0;
 }
 
 h1 {
+  // provided h1 size in the styleguide was too small to resemble the sample at full screen
   font-size: 8rem;
-  text-transform: uppercase;
   line-height: 4.55rem;
 }
 
 h2 {
   font-size: 2.1rem;
-  // test
-  margin-top: 0;
 }
 
 h3 {
   font-size: 1.6rem;
-  // test
-  margin-top: 0;
 }
 
 h4 {
   font-size: 1.2rem;
+}
+
+h1, 
+nav {
+  color: $whiteShade;
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.05rem;
 }
 
 h1,
@@ -52,10 +67,24 @@ section a,
   font-family: 'Abril Fatface', sans-serif;
 }
 
-h1, 
+h1,
+h2,
+h3,
+h4,
 nav {
-  color: $whiteShade;
-  font-weight: bold;
+  text-transform: uppercase;
+}
+
+// links and nav
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section a {
+  background-color: $accent;
+  padding: 0.8rem 1.25rem;
 }
 
 .currentPage {
@@ -66,23 +95,7 @@ nav {
   font-size: 2rem;
 }
 
-h3,
-h4,
-nav {
-  text-transform: uppercase;
-}
-
+// font awesome
 i {
   font-size: 1.3rem;
-}
-
-// other test
-p {
-  margin: 0;
-}
-
-// links
-section a {
-  background-color: $accent;
-  padding: 0.8rem 1.25rem;
 }
