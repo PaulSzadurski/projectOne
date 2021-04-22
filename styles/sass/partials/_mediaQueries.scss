@@ -2,7 +2,7 @@
 
 @media (max-width: 1345px) {
   // home page
-  .homeHeader h1 {
+  .homeFlex h1 {
   font-size: 6rem;
   }
 }
@@ -17,8 +17,13 @@
 
 @media (max-width: 1166px) {
   // home page
-  .homeHeader h1 {
+  .homeFlex h1 {
   font-size: 4rem;
+  }
+
+  .homeFlex h1::before {
+  top: -3rem;
+  left: -3rem;
   }
 }
 
@@ -44,19 +49,29 @@
 
 @media (max-width: 992px) {
   // home page
-  .homeHeader h1 {
+  .homeFlex h1 {
     font-size: 3rem;
   }
 }
 
 @media (max-width: 900px) {
   // home page
-  .homeHeader h1 {
+  .homeFlex img {
     display: none;
+  }
+
+  .homeHeader .wrapper {
+    height: 100%;
   }
 
   .homeFlex {
     padding: 0;
+    height: 100%;
+  }
+
+  .homeFlex h1 {
+    font-size: 6rem;
+    text-align: center;
   }
 
   // contact page
@@ -110,6 +125,13 @@
   .infoSubFlex {
     width: 100%;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 672px) {
+  // home page
+  .homeFlex h1 {
+    font-size: 4rem;
   }
 }
 
@@ -210,12 +232,6 @@
   .homeFlex {
     padding: 2rem;
   }
-
-  .homeFlex img {
-    width: 100vw;
-    box-shadow: none;
-    margin-bottom: 1rem;
-  }
 }
 
 @media (max-width: 560px) {
@@ -229,7 +245,7 @@
   }
 
   .formFlex input[type=text] {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;  
   }
   
   // blog page
@@ -245,6 +261,18 @@
     bottom: -1.1rem;
   }
 
+  @media (max-width: 500px) {
+  // home page
+  .homeFlex h1 {
+    font-size: 2.5rem;
+  }
+
+  .homeFlex h1::before {
+    top: -2rem;
+    left: -1.5rem;
+  }
+  }
+
 @media (max-width: 423px) {
   // contact page
   .contactHeader h1 {
@@ -256,7 +284,12 @@
 @media (max-width: 368px) {
   // home page
   .homeHeader {
-    height: 60vh;
+    height: 29rem;
+  }
+
+  // mobile burger nav
+  .navIcon {
+    padding-right: 1rem;
   }
 }
 
@@ -269,12 +302,5 @@
   .comments img {
     display: none;
   }
-  }
-}
-
-@media (max-width: 320px) {
-  // mobile burger nav
-  .navIcon {
-    padding-right: 1rem;
   }
 }

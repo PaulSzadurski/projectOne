@@ -2,9 +2,6 @@
 
 nav {
   background-color: $pine;
-}
-
-nav {
   padding-bottom: 1rem;
 }
 
@@ -18,6 +15,10 @@ nav {
 nav li {
   padding-left: 2.25rem;
   padding-top: 1.25rem;
+}
+
+nav a:hover {
+  color: $accent;
 }
 
 // nav icon

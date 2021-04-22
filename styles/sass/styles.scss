@@ -9,8 +9,30 @@
 @import 'partials/home';
 @import 'partials/mediaQueries';
 
+// wrapper
 .wrapper {
   margin: 0 auto;
   width: 80%;
 }
 
+// misc. header stylings
+
+// prevents overflow on home page
+header {
+  max-width: 100%;
+}
+
+// combing blog and contact general header styling
+.blogHeader,
+.contactHeader {
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+// about page styling
+.about h1 {
+  color: $black;
+  line-height: 8rem;
+}

@@ -1,12 +1,8 @@
 @import "variables";
 
-// header
+// header styling
 .blogHeader {
-  height: 60vh;
   background-image: url(../assets/blog-image-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 
 .blogHeader h1 {
@@ -15,7 +11,7 @@
   bottom: 0.5rem;
 }
 
-// main
+// main styling
 .blogMain {
   padding-top: 5rem;
   background-color: $whiteShade;
@@ -27,10 +23,11 @@
   justify-content: space-between;
 }
 
+// aside styling
 aside, 
 .blogFlex section,
 article {
-  background-color: white;
+  background-color: $white;
 }
 
 aside {
@@ -50,6 +47,7 @@ aside img {
   width: calc(30% - 1rem);
 }
 
+// article styling
 .articleFlex {
   width: calc(70% - 1rem);
 }

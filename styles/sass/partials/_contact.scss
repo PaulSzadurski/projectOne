@@ -1,12 +1,8 @@
 @import 'variables';
 
-// header
+// header styling
 .contactHeader {
-  height: 60vh;
   background-image: url(../assets/contact-image-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 
 .contactHeader h1 {
@@ -15,7 +11,7 @@
   bottom: 0.75rem;
 }
 
-// main
+// main styling
 .contactMain {
   background: $whiteShade;
 }
@@ -26,6 +22,7 @@
   padding-bottom: 6rem;
 }
 
+// contact info styling
 .contactInfo {
   width: 30%;
 }
@@ -46,6 +43,7 @@
   padding: 1.2rem 0;
 }
 
+// contact form styling
 .contactForm {
   margin-left: 2rem;
   width: calc(70% - 2rem);
@@ -57,16 +55,12 @@
   padding-bottom: 1rem;
 }
 
-.contactText textarea {
+.contactText textarea,
+.contactSubmit input {
   width: 100%;
   height: 100%;
 }
 
 .contactSubmit {
   padding-bottom: 0;
-}
-
-.contactSubmit input {
-  width: 100%;
-  height: 100%;
 }
