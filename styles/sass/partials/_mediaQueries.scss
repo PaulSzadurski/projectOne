@@ -217,24 +217,7 @@
 }
 
 @media (max-width: 560px) {
-  // blog page
-  .comments section p:first-child {
-    padding-bottom: 1rem;
-  }
-
-  .articleFlex .commentInfo {
-    flex-direction: column;
-  }
-
-  .articleFlex form input {
-    width: 100%;
-  }
-
-  .articleFlex input[type=text] {
-    margin-bottom: 1rem;
-  }
-
-  // contact page
+  // forms on blog and contact page
   .formFlex {
     flex-direction: column;
   }
@@ -245,6 +228,11 @@
 
   .formFlex input[type=text] {
     margin-bottom: 1rem;
+  }
+  
+  // blog page
+  .comments section p:first-child {
+    padding-bottom: 1rem;
   }
 }
 

@@ -582,7 +582,7 @@ article p {
   margin-bottom: 1rem;
 }
 
-.commentInfo {
+.formFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,7 +591,7 @@ article p {
           justify-content: space-between;
 }
 
-.commentInfo input {
+.formFlex input {
   width: 49%;
 }
 
@@ -987,21 +987,6 @@ footer {
 }
 
 @media (max-width: 560px) {
-  .comments section p:first-child {
-    padding-bottom: 1rem;
-  }
-  .articleFlex .commentInfo {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .articleFlex form input {
-    width: 100%;
-  }
-  .articleFlex input[type=text] {
-    margin-bottom: 1rem;
-  }
   .formFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1013,6 +998,9 @@ footer {
   }
   .formFlex input[type=text] {
     margin-bottom: 1rem;
+  }
+  .comments section p:first-child {
+    padding-bottom: 1rem;
   }
 }
 
