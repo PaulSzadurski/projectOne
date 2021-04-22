@@ -12,9 +12,12 @@
   <script src="https://kit.fontawesome.com/1adebb3231.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- skips to main content -->
+  <a href="#main" class="skip">Skip to Main Content</a>
   <header class="homeHeader">
     <div class="wrapper">
       <nav>
+        <!-- appears on mobile devices -->
         <div class="navIcon">
           <label for="menu"><i class="fas fa-bars"></i></label>
           <input type="checkbox" name="menu" id="menu">
@@ -25,6 +28,7 @@
           <li><a href="pages/contact.html">Contact</a></li>
           </ul>
         </div>
+        <!-- appears on desktop/tablet -->
         <ul class="desktopMenu">
           <li><a href="index.html" class="currentPage">Home</a></li>
           <li><a href="pages/about.html">About</a></li>
@@ -40,7 +44,8 @@
     </div>
   </header>
 
-  <main class="homeMain">
+  <main class="homeMain" id="main">
+    <!-- Who's Willow section -->
     <section class="homeWho">
       <div class="wrapper">
         <h2>Who's Willow?</h2>
@@ -49,6 +54,7 @@
       </div>
     </section>
 
+    <!-- Favourite Things section -->
     <section>
       <div class="homeFavourites wrapper">
         <div class="favouriteImg">
@@ -62,6 +68,7 @@
       </div>
     </section>
 
+    <!-- Bucket List section -->
     <section>
       <div class="homeBucket wrapper">
         <div class="bucketFlex">
@@ -75,6 +82,7 @@
       </div>
     </section>
 
+    <!-- Willow's Journey section -->
     <section class="homeJourney">
       <div class="wrapper journeyFlex">
         <img src="assets/home-image-4.jpg" alt="willow in a forest">
@@ -90,6 +98,7 @@
       <!-- background image added in css here -->
     </section>
 
+    <!-- Gallery section -->
     <section class="gallery wrapper">
       <img src="assets/home-image-6.jpg" alt="a road in a forest">
       <img src="assets/home-image-7.jpg" alt="a bowl of fruit">
@@ -99,6 +108,7 @@
 
   <footer>
     <div class="wrapper">
+      <!-- footer info about Willow -->
       <section class="homeInfo">
         <div class="infoSubFlex">
           <i class="fas fa-image circleIcon"></i>
@@ -136,6 +146,7 @@
         </div>
       </section>
     </div>
+    
     <section class="copyright">Copyright © 2018 HackerYou</section>
   </footer>
 </body>

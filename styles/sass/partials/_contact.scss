@@ -28,14 +28,18 @@
 }
 
 .contactInfo ul {
-  background: white;
+  background: $white;
   padding: 2.5rem 2rem;
 }
 
-.contactInfo i {
+.contactInfo a {
   color: $pine;
-  margin-right: 2rem;
   font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.fa-instagram {
+  margin: 0
 }
 
 .contactInfo li:nth-child(2) {
@@ -56,11 +60,11 @@
 }
 
 .contactText textarea,
-.contactSubmit input {
+button {
   width: 100%;
   height: 100%;
 }
 
-.contactSubmit {
+button {
   padding-bottom: 0;
 }

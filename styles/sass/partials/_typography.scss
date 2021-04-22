@@ -75,24 +75,11 @@ nav {
   text-transform: uppercase;
 }
 
-// links and nav
+// links
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-section a {
-  background-color: $accent;
-  padding: 0.8rem 1.25rem;
-}
-
-.currentPage {
-  color: $accent;
-}
-
-.title {
-  font-size: 2rem;
 }
 
 // font awesome

@@ -12,35 +12,40 @@
   <script src="https://kit.fontawesome.com/1adebb3231.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="blogHeader">
-    <nav>
-      <div class="navIcon wrapper">
-        <label for="menu" class="menuCheck"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" name="menu" id="menu">
-        <ul class="mobileMenu">
+    <!-- skips to main content -->
+    <a href="#main" class="skip">Skip to Main Content</a>
+    <header class="blogHeader">
+      <nav>
+        <!-- appears on mobile -->
+        <div class="navIcon wrapper">
+          <label for="menu" class="menuCheck"><i class="fas fa-bars"></i></label>
+          <input type="checkbox" name="menu" id="menu">
+          <ul class="mobileMenu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html" class="currentPage">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- appears on desktop/tablet -->
+        <ul class="desktopMenu">
           <li><a href="../index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li class="title">Willow</li>
           <li><a href="blog.html" class="currentPage">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </div>
-      <ul class="desktopMenu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="title">Willow</li>
-        <li><a href="blog.html" class="currentPage">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+      </nav>
     <div class="wrapper">
       <h1>Blog & News</h1>
     </div>
   </header>
 
-  <main class="blogMain">
+  <main class="blogMain" id="main">
     <div class="wrapper blogFlex">
     
       <div class="articleFlex">
+        <!-- blog article -->
         <article>
           <h3>My Favourite Travel Destinations</h3>
           <p>Monday October 8th, 2018 by Willow<p>
@@ -51,6 +56,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam fugiat inventore impedit nostrum eveniet placeat voluptatibus quibusdam assumenda, id provident cum vel magnam sequi hic ipsam officiis cupiditate, dignissimos animi repellat pariatur magni totam in! Dolores repellendus distinctio atque porro nulla totam magnam ipsam cumque! Temporibus fugit est itaque rerum. Ratione, illum? Facere rem voluptas cumque repudiandae! Id, repudiandae recusandae.</p>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non vero assumenda amet incidunt voluptatum quaerat voluptatem soluta, at iure dolores eius, excepturi vitae enim distinctio! Tempore dolorum perspiciatis impedit maxime eius. Earum unde quis numquam quos, consequuntur ad. Alias debitis tempora eos, soluta rerum animi nostrum commodi earum, delectus perferendis voluptatem iste ut dolores eligendi deleniti quis dolor vel dignissimos incidunt, numquam quibusdam facere cupiditate similique. Excepturi delectus obcaecati nihil facere consequatur, doloribus doloremque veniam dolorum voluptas laboriosam, sit quasi rem atque ut necessitatibus nesciunt!</p>
         </article>
+        <!-- comments section -->
         <div class="comments">
           <section>
             <img src="../assets/blog-image-3.jpg" alt="A commenter">
@@ -67,6 +73,7 @@
             </div>
           </section>
         </div>
+        <!-- form to submit a comment -->
         <form action="submit">
           <div class="formFlex">
             <label for="username" class="sr-only">Your Name:</label>
@@ -79,10 +86,11 @@
           <label for="comment" class="sr-only">Write a Comment:</label>
           <textarea name="comment" id="comment" placeholder="Comment" rows="10"></textarea>
 
-          <input type="submit" value="Post Comment">
+          <button type="submit">Post Comment</button>
         </form>
       </div>
 
+    <!-- blog asides -->
       <div class="asideFlex">
         <aside>
           <img src="../assets/blog-image-2.jpg" alt="A picture of Willow">

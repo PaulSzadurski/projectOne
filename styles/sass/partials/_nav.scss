@@ -17,9 +17,23 @@ nav li {
   padding-top: 1.25rem;
 }
 
+a:focus {
+  border: solid 0.1rem $black;
+}
+
 nav a:hover {
   color: $accent;
 }
+
+
+.currentPage {
+  color: $accent;
+}
+
+.title {
+  font-size: 2rem;
+}
+
 
 // nav icon
 .navIcon, 

@@ -1,12 +1,23 @@
-@import 'partials/setup';
-@import 'partials/typography';
-@import 'partials/nav';
-@import 'partials/variables';
-@import 'partials/footer';
-@import 'partials/contact';
-@import 'partials/forms';
+// blog page styling
 @import 'partials/blog';
+// contact page styling
+@import 'partials/contact';
+// juno/hackeryou copyright styling
+@import 'partials/footer';
+// general forms styling
+@import 'partials/forms';
+// home page/index.html styling
 @import 'partials/home';
+// navigation styling
+@import 'partials/nav';
+// setup snippet
+@import 'partials/setup';
+// general typography styling
+@import 'partials/typography';
+// color variables
+@import 'partials/variables';
+
+// media queries and sliding burger nav
 @import 'partials/mediaQueries';
 
 // wrapper
@@ -14,8 +25,6 @@
   margin: 0 auto;
   width: 80%;
 }
-
-// misc. header stylings
 
 // prevents overflow on home page
 header {
@@ -35,4 +44,18 @@ header {
 .about h1 {
   color: $black;
   line-height: 8rem;
+}
+
+// accessibility feature allowing a user to skip to main content through tabbing
+.skip {
+  position: absolute;
+  left: -1000rem;
+  top: 5rem;
+  z-index: 999;
+  background: $accent;
+  color: $black;
+}
+
+.skip:focus {
+  left: 5rem;
 }
