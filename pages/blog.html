@@ -116,5 +116,39 @@
   <footer>
     <section class="copyright">Copyright © 2021 Juno College</section>
   </footer>
+
+  <script>
+    const commentInput = document.querySelector(`form`);
+    console.log(commentInput);
+
+    commentInput.addEventListener('submit', function (event) {
+      // const username = document.querySelectorAll('input[name="username"]')
+      const username = document.getElementById("username");
+      const comment = document.getElementById("comment");
+      event.preventDefault();
+      console.log(`this works!`);
+      console.log(username.value);
+      console.log(comment.value);
+
+      // const commentAppend =`
+      // <section>
+      //   <div class="commentText">
+      //     <p>${username.value}</p>
+      //     <p>${comment.value}</p>
+      //   </div>
+      // </section>
+      // `;
+
+      // console.log(commentAppend);
+      const commentSection = document.querySelector('.comments');
+      console.log(commentSection);
+
+      const newCommentSection = document.createElement("section");
+      const newCommentText = document.createTextNode(username.value + comment.value);
+
+      newCommentSection.appendChild(newCommentText);
+      commentSection.appendChild(newCommentSection);
+      })
+  </script>
 </body>
 </html>
