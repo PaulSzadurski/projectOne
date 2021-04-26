@@ -141,10 +141,12 @@
 
       // console.log(commentAppend);
       const commentSection = document.querySelector('.comments');
-      console.log(commentSection);
 
       const newCommentSection = document.createElement("section");
-      const newCommentText = document.createTextNode(username.value + comment.value);
+
+      const commentDate = new Date();
+
+      const newCommentText = document.createTextNode(`${commentDate} by ${username.value}:   ${comment.value}`);
 
       newCommentSection.appendChild(newCommentText);
       commentSection.appendChild(newCommentSection);
