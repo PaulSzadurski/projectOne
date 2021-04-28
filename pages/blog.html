@@ -74,7 +74,7 @@
           </section>
         </div>
         <!-- form to submit a comment -->
-        <form action="submit">
+        <form action="submit" class="commentForm">
           <div class="formFlex">
             <label for="username" class="sr-only">Your Name:</label>
             <input type="text" name="username" id="username" placeholder="Name">
@@ -124,33 +124,30 @@
     commentInput.addEventListener('submit', function (event) {
       // const username = document.querySelectorAll('input[name="username"]')
       const username = document.getElementById("username");
+      const email = document.getElementById("email");
       const comment = document.getElementById("comment");
       event.preventDefault();
-      console.log(`this works!`);
-      console.log(username.value);
-      console.log(comment.value);
-
-      // const commentAppend =`
-      // <section>
-      //   <div class="commentText">
-      //     <p>${username.value}</p>
-      //     <p>${comment.value}</p>
-      //   </div>
-      // </section>
-      // `;
-
-      // console.log(commentAppend);
       const commentSection = document.querySelector('.comments');
-
       const newCommentSection = document.createElement("section");
-
       const commentDate = new Date();
 
-      const newCommentText = document.createTextNode(`${commentDate} by ${username.value}:   ${comment.value}`);
-
-      newCommentSection.appendChild(newCommentText);
-      commentSection.appendChild(newCommentSection);
-      })
+      newCommentSection.innerHTML = `
+        <img src="http://placecorgi.com/90" />        
+        <div class="commentText">
+          <p>${commentDate} by ${username.value}</p>
+          <p>${comment.value}</p>
+        </div>
+      `
+      if (username.value == '') {
+        alert(`Please enter a name!`);
+      } else if (email.value == "") {
+        alert(`Please enter an email!`);
+      } else if (comment.value == "") {
+        alert(`Please enter a comment!`)
+      } else {
+        commentSection.appendChild(newCommentSection);
+      }
+    })
   </script>
 </body>
 </html>
